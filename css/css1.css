@@ -1,11 +1,16 @@
 body {
   background-color: #eaf6f6;
+  overflow-x: hidden;
 }
-
+.navbar{
+  width: 100%;
+  position: fixed;
+  z-index: 7;
+}
 .row1 {
 min-height: 20vw;
-padding-top: 2vw;
-color: #f76b8a;
+padding-top: 5vw;
+color: #66bfbf;
 }
 .row2 {
 min-height: 19vw;
@@ -16,27 +21,33 @@ min-height: 19vw;
 }
 .title1{
   text-align: center;
+  height: 23vw;
+  margin-top: 5vw;
 }
 
 .picS{
   width: 18vw;
+  font-size: 2vw;
   height: 17vw;
   padding: .5%;
   margin: 1%;
   background-color: #000000;
   background:rgba(1,1,1,0.5);
   color: #FFFFFF;
+  line-height: .8;
 }
 .ctrim
 {
   width: 100%;
   height: 10vw;
   overflow: hidden;
+  margin-bottom: 1vw;
 }
 
 .contain1{
   background-color: #66bfbf;
   color: white;
+  padding-top: 1vw;
 
 }
 .row{
@@ -112,5 +123,105 @@ justify-content: flex-end;
   background-size: 100%;
 }
 .crtext{
-  font-size: 13px;
+  font-size: 1vw;
+}
+.sticker1{
+  width: 13vw;
+  position:absolute;
+  left: 5vw;
+  top: 2vw;
+  transform: rotate(-5deg);
+}
+.sticker2{
+  width: 14vw;
+  position:absolute;
+  left: 63vw;
+  top: 1vw;
+  transform: rotate(-20deg);
+}
+.sticker3{
+  width: 11vw;
+  position:absolute;
+  left: 54vw;
+  top: 9vw;
+  transform: rotate(20deg);
+}
+.logo1{
+  top: 3vw;
+  width: 12vw;
+  left: 18vw;
+  position:absolute;
+}
+.logo2{
+  top:1vw;
+  width: 32vw;
+  left: 28vw;
+  position:absolute;
+}
+.logo3{
+  top: 8.5vw;
+  left: 26vw;
+  width: 25vw;
+  position:absolute;
+}
+.subhead{
+  color: #66bfbf;
+  font-size: 2vw;
+  font-family: 'Sunshiney', cursive;
+  position:absolute;
+  top: 15vw;
+  left: 23vw;
+}
+h2
+{
+  font-size: 3vw;
+  font-family: 'Sunshiney', cursive;
+}
+.sec1 > hr{
+  border-color: white;
+  border-style: dashed;
+  margin-top: .5vw;
+  margin-bottom: .5vw;
+
+}
+.subbox
+{
+  border-radius: 2vw;
+  border-color: #66bfbf;
+  border-width: .1vw;
+  background-color: white;
+  padding: 2vw;
+  margin: 1vw;
+  border-style: solid;
+}
+.footer-copyright{
+  background: #f76b8a;
+  text-align: center;
+  font-size: 1vw;
+  height: 3vw;
+}
+.footer-container{
+  background: #f76b8a;
+  text-align: center;
+  height: 7vw;
+
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
